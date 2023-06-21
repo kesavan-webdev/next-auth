@@ -4,7 +4,7 @@ import { GoSignIn } from "react-icons/go";
 
 const Header = () => {
   return (
-    <nav className="navbar bg-slate-500 flex justify-between p-5 items-center h-16">
+    <nav className="navbar bg-slate-500 flex justify-between p-5 px-2 items-center h-16">
       <div>
         <Image src={"/logo.png"} alt="logo" width={180} height={40} />
       </div>
@@ -17,7 +17,13 @@ const Header = () => {
           <span className="hidden md:block"> Sign In</span>
           <GoSignIn className="md:hidden px-2 w-full h-full" />
         </button>
-        <Image src={"profile.svg"} alt="logo" width={40} height={40} />
+        <Image
+          className="cursor-pointer"
+          src={"profile.svg"}
+          alt="logo"
+          width={40}
+          height={40}
+        />
       </div>
     </nav>
   );
