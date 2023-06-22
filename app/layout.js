@@ -1,10 +1,10 @@
 import Header from "@/components/header/header.component";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Arya } from "next/font/google";
 import Footer from "@/components/footer/footer.component";
 import AuthProvider from "@/components/auth-provider/auth-provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Arya({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata = {
   title: "Next-Auth-TailwindCss",
