@@ -1,16 +1,14 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAJ0MXDoMGoKG_02Dej3d5s9T_m2-GnMek",
-  authDomain: "arun-softsolutions.firebaseapp.com",
-  projectId: "arun-softsolutions",
-  storageBucket: "arun-softsolutions.appspot.com",
-  messagingSenderId: "264181169039",
-  appId: "1:264181169039:web:95f7f287bb3e50fad969fa",
+  apiKey: "AIzaSyBsav3-9H03GfaNT3gbcfBZxAsvicKDaMI",
+  authDomain: "next-auth-games.firebaseapp.com",
+  projectId: "next-auth-games",
+  storageBucket: "next-auth-games.appspot.com",
+  messagingSenderId: "105346228124",
+  appId: "1:105346228124:web:654988e215006d2eeeb259",
+  measurementId: "G-LNRV1YHPHD",
 };
 
 // Initialize Firebase
