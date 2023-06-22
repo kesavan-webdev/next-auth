@@ -1,6 +1,17 @@
+"use client";
+
+import { useState } from "react";
+
 const Search = () => {
+  const [searchText, setSearchText] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log("searchText", searchText);
+    setSearchText("");
+  };
   return (
-    <form className="sm:px-28 px-10">
+    <form className="sm:px-28 px-10" onSubmit={handleSubmit}>
       <label
         for="default-search"
         className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -28,8 +39,10 @@ const Search = () => {
         <input
           type="search"
           id="default-search"
+          value={searchText}
+          onChange={(e) => setSearchText(e.target.value)}
           className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-gary-500 focus:border-gray-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="Search Mockups, Logos..."
+          placeholder="Search..."
           required
         />
         <button

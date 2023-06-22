@@ -16,7 +16,7 @@ const Header = () => {
           <TfiWrite className="md:hidden px-2 w-full h-full" />
         </button>
 
-        {session && session.user ? (
+        {session ? (
           <button
             className="bg-white rounded-full shadow-lg p-2 hover:bg-slate-400 hover:text-white"
             onClick={() => signOut()}
